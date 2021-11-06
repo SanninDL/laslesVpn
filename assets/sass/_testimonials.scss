@@ -1,0 +1,75 @@
+.testimonials {
+	&-map {
+		margin-top: 100px;
+		img {
+			width: 100%;
+		}
+	}
+	&-sponsored {
+		margin-top: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 16px;
+		flex-wrap: wrap;
+		&-item {
+			min-width: 200px;
+		}
+	}
+}
+.customer {
+	.owl-stage {
+		display: flex;
+		align-items: stretch;
+	}
+	.owl-item {
+		display: flex;
+	}
+	.carousel-item {
+		margin-top: 60px;
+		padding: 30px;
+		border: 2px solid #ddd;
+		border-radius: 10px;
+
+		&-head {
+			display: flex;
+			align-items: center;
+		}
+		.avatar {
+			width: 50px;
+			height: 50px;
+			img {
+				width: 100%;
+			}
+		}
+		.info {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-left: 20px;
+			.name {
+				font-size: 1.8rem;
+				line-height: calc(30 / 18);
+			}
+			span {
+				font-size: 1.4rem;
+			}
+		}
+		.rating {
+			i {
+				color: #fea250;
+			}
+		}
+		&-content {
+			margin-top: 10px;
+			font-size: 1.6rem;
+			line-height: calc(30 / 16);
+			color: $heading-text-color;
+		}
+	}
+
+	.carousel-item.active {
+		border: 20px;
+	}
+}

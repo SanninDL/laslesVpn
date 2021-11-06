@@ -1,0 +1,111 @@
+.header {
+	padding: 30px 0;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+
+	&-logo {
+		display: flex;
+		align-items: center;
+	}
+	&-btn {
+		display: none;
+	}
+	&-nav-colse {
+		display: none;
+	}
+	&-right {
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+	}
+	&-nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 1;
+		&-item {
+			padding: 5px;
+			margin: 0 10px;
+			transition: $transition;
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+	&-auth {
+		font-weight: 500;
+		.sign-in {
+			margin-right: 16px;
+		}
+		.sign-up {
+			color: $primary-color-light;
+			padding: 15px 45px;
+			border: 1px solid $primary-color-light;
+			border-radius: 50px;
+			&:hover {
+				color: $white-color;
+				background-color: $primary-color;
+				border-color: $primary-color;
+			}
+		}
+		.btn--primary {
+			padding: 15px 45px;
+		}
+	}
+	@media screen and (max-width: 940px) {
+		&-auth {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 10px 0;
+			.sign-in {
+				margin: 0;
+			}
+		}
+	}
+	@media screen and (max-width: 878px) {
+		&-right {
+			position: fixed;
+			top: 0;
+			right: 0;
+			width: 300px;
+			background-color: $primary-color-soft;
+			flex-direction: column;
+			padding: 20px;
+			transform: translateX(100%);
+			transition: $transition;
+		}
+		&-nav-colse {
+			display: block;
+			font-size: 3rem;
+			text-align: right;
+			margin-right: 30px;
+		}
+		&-nav {
+			flex-direction: column;
+			margin-top: 16px;
+			&-item {
+				margin: 8px;
+			}
+		}
+		&-auth {
+			margin-top: 16px;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			.sign-in {
+				margin-right: 0;
+				margin-bottom: 16px;
+			}
+			.sign-in,
+			.sign-up {
+				flex-shrink: 0;
+			}
+		}
+		&-btn {
+			display: block;
+			font-size: 3rem;
+			margin-right: 20px;
+		}
+	}
+}

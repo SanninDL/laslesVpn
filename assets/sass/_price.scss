@@ -1,0 +1,55 @@
+.price {
+	background-color: $gray-color;
+	&-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+		gap: 50px;
+
+		margin-top: 60px;
+	}
+
+	&-item {
+		padding: 80px 70px 50px;
+		border: 2px solid #dddddd;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		&-img {
+			display: flex;
+			justify-content: center;
+		}
+		&-plan {
+			margin: 30px 0;
+			font-size: 1.8rem;
+			line-height: calc(30 / 18);
+		}
+		&-desc {
+			font-size: 1.4rem;
+			line-height: calc(30 / 14);
+			flex: 1;
+		}
+		&-cash {
+			font-size: 2.5rem;
+			line-height: calc(30 / 25);
+			font-weight: 500;
+			margin: 50px 0 20px;
+			span {
+				font-weight: 400;
+				color: $text-color;
+			}
+		}
+		&-btn {
+			justify-self: flex-end;
+		}
+	}
+	&-item.active {
+		border-color: $primary-color;
+		.price-item-btn {
+			@extend .btn--primary;
+		}
+	}
+}

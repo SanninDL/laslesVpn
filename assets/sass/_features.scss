@@ -1,0 +1,47 @@
+.features {
+	display: flex;
+	gap: 0 30px;
+
+	&-img {
+		padding: 0 30px;
+	}
+	&-content {
+		flex: 50%;
+	}
+	.section-heading {
+		width: 100%;
+		text-align: left;
+	}
+	.section-desc {
+		text-align: left;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	&-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		color: $green-color;
+		font-size: 2.4rem;
+
+		span {
+			font-size: 1.6rem;
+			margin-left: 10px;
+			color: $text-color;
+		}
+	}
+	@media screen and (max-width: 900px) {
+		&-content {
+			flex: 0 0 65%;
+		}
+	}
+	@media screen and (max-width: 576px) {
+		&-img {
+			display: none;
+		}
+		&-content {
+			flex: 100%;
+			text-align: center;
+		}
+	}
+}

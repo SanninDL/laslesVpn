@@ -1,0 +1,107 @@
+html {
+	font-family: $font;
+	font-size: 62.5%;
+}
+body {
+	color: $text-color;
+	font-size: 1.6rem;
+	line-height: 1;
+	vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $heading-text-color;
+	font-weight: 500;
+}
+h5,
+h6 {
+	font-size: 1.8rem;
+	line-height: calc(30 / 18);
+}
+p {
+	font-size: 1.6rem;
+	line-height: calc(30 / 16);
+}
+.wrap {
+	max-width: 1440px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.btn {
+	padding: 15px 60px;
+	border-radius: 50px;
+	transition: $transition;
+	background-color: transparent;
+	text-align: center;
+	@media screen and (max-width: 1200px) {
+		padding: 15px 30px;
+	}
+}
+.btn--transparent {
+	@extend .btn;
+	border: 2px solid $primary-color;
+	color: $primary-color;
+	font-weight: 500;
+	line-height: calc(19 / 16);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+	&:hover {
+		background-color: $primary-color;
+		color: $white-color;
+	}
+}
+.btn--primary {
+	@extend .btn;
+	background-color: $primary-color;
+	color: $white-color;
+	border: 1px solid $primary-color;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+.btn--big {
+	display: inline-flex;
+	align-items: center;
+	border-radius: 10px;
+	height: 60px;
+	background-color: $primary-color;
+	color: $white-color;
+	padding-left: 65px;
+	padding-right: 65px;
+	&:hover {
+		opacity: 0.7;
+	}
+}
+.section {
+	padding: 50px 0;
+	&-heading {
+		color: $heading-text-color;
+		font-size: 3.5rem;
+		line-height: calc(50 / 35);
+		margin: 0 auto 20px;
+		text-align: center;
+		font-weight: 500;
+		width: 40%;
+	}
+	&-desc {
+		line-height: calc(30 / 16);
+		color: $text-color;
+		width: 50%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	@media screen and (max-width: 992px) {
+		&-heading {
+			width: 80%;
+		}
+		&-desc {
+			width: 80%;
+		}
+	}
+}

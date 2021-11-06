@@ -1,0 +1,49 @@
+.hero {
+	padding: 50px 0;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	&-text {
+		max-width: 555px;
+		h1 {
+			font-size: 5rem;
+			font-weight: 500;
+			line-height: calc(70 / 50);
+		}
+		p {
+			line-height: calc(30 / 16);
+			margin: 20px 0 50px;
+		}
+	}
+	&-img {
+		img {
+			width: 100%;
+		}
+	}
+
+	@media screen and (max-width: 878px) {
+		&-text {
+			max-width: 50%;
+			h1 {
+				font-size: 3rem;
+			}
+		}
+	}
+	@media screen and (max-width: 640px) {
+		&-desc {
+			display: none;
+		}
+		&-btn {
+			margin-top: 16px;
+		}
+	}
+	@media screen and (max-width: 576px) {
+		&-text {
+			max-width: 100%;
+			text-align: center;
+		}
+		&-img {
+			display: none;
+		}
+	}
+}
