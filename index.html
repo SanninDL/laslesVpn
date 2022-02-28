@@ -26,9 +26,14 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<!-- Owl carousel -->
-		<link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-		<link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+
+		<!--  -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 		<!-- CSS -->
 		<link rel="stylesheet" href="./assets/css/main.css" />
 	</head>
@@ -255,107 +260,118 @@
 								These are the stories of our customers who have joined us with
 								great pleasure when using this crazy feature.
 							</p>
-							<div class="customer-carousel-wrap">
-								<div class="customer-carousel owl-carousel owl-theme">
-									<div class="carousel-item item">
-										<div class="carousel-item-head">
-											<div class="avatar">
-												<img
-													class="owl-lazy"
-													data-src="./assets/img/customer1.png"
-													src="./assets/img/customer1.png"
-													alt="Viezh Robert"
-												/>
+							<div class="swiper mySwiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="carousel-item">
+											<div class="carousel-item-head">
+												<div class="avatar">
+													<img
+														class="owl-lazy"
+														data-src="./assets/img/customer1.png"
+														src="./assets/img/customer1.png"
+														alt="Viezh Robert"
+													/>
+												</div>
+												<div class="info">
+													<h6 class="name">Viezh Robert</h6>
+													<span>Warsaw, Poland</span>
+												</div>
+												<div class="rating">
+													<span>4.5</span>
+													<i class="fas fa-star"></i>
+												</div>
 											</div>
-											<div class="info">
-												<h6 class="name">Viezh Robert</h6>
-												<span>Warsaw, Poland</span>
+											<div class="carousel-item-content">
+												“Wow... I am very happy to use this VPN, it turned out
+												to be more than my expectations and so far there have
+												been no problems. LaslesVPN always the best”.
 											</div>
-											<div class="rating">
-												<span>4.5</span>
-												<i class="fas fa-star"></i>
-											</div>
-										</div>
-										<div class="carousel-item-content">
-											“Wow... I am very happy to use this VPN, it turned out to
-											be more than my expectations and so far there have been no
-											problems. LaslesVPN always the best”.
 										</div>
 									</div>
-									<div class="carousel-item item">
-										<div class="carousel-item-head">
-											<div class="avatar">
-												<img
-													class="owl-lazy"
-													data-src="./assets/img/customer2.png"
-													src="./assets/img/customer2.png"
-													alt=""
-												/>
+									<div class="swiper-slide">
+										<div class="carousel-item">
+											<div class="carousel-item-head">
+												<div class="avatar">
+													<img
+														class="owl-lazy"
+														data-src="./assets/img/customer2.png"
+														src="./assets/img/customer2.png"
+														alt=""
+													/>
+												</div>
+												<div class="info">
+													<h6 class="name">Yessica Christy</h6>
+													<span>Shanxi, China</span>
+												</div>
+												<div class="rating">
+													<span>4.5</span>
+													<i class="fas fa-star"></i>
+												</div>
 											</div>
-											<div class="info">
-												<h6 class="name">Yessica Christy</h6>
-												<span>Shanxi, China</span>
+											<div class="carousel-item-content">
+												“I like it because I like to travel far and still can
+												connect with high speed.”.
 											</div>
-											<div class="rating">
-												<span>4.5</span>
-												<i class="fas fa-star"></i>
-											</div>
-										</div>
-										<div class="carousel-item-content">
-											“I like it because I like to travel far and still can
-											connect with high speed.”.
 										</div>
 									</div>
-									<div class="carousel-item item">
-										<div class="carousel-item-head">
-											<div class="avatar">
-												<img
-													class="owl-lazy"
-													data-src="./assets/img/customer3.png"
-													src="./assets/img/customer3.png"
-													alt=""
-												/>
+									<div class="swiper-slide">
+										<div class="carousel-item swiper-slide">
+											<div class="carousel-item-head">
+												<div class="avatar">
+													<img
+														class="owl-lazy"
+														data-src="./assets/img/customer3.png"
+														src="./assets/img/customer3.png"
+														alt=""
+													/>
+												</div>
+												<div class="info">
+													<h6 class="name">Kim Young Jou</h6>
+													<span>Seoul, South Korea</span>
+												</div>
+												<div class="rating">
+													<span>4.5</span>
+													<i class="fas fa-star"></i>
+												</div>
 											</div>
-											<div class="info">
-												<h6 class="name">Kim Young Jou</h6>
-												<span>Seoul, South Korea</span>
+											<div class="carousel-item-content">
+												“This is very unusual for my business that currently
+												requires a virtual private network that has high
+												security.”.
 											</div>
-											<div class="rating">
-												<span>4.5</span>
-												<i class="fas fa-star"></i>
-											</div>
-										</div>
-										<div class="carousel-item-content">
-											“This is very unusual for my business that currently
-											requires a virtual private network that has high
-											security.”.
 										</div>
 									</div>
-									<div class="carousel-item item">
-										<div class="carousel-item-head">
-											<div class="avatar">
-												<img
-													class="owl-lazy"
-													data-src="./assets/img/customer2.png"
-													src="./assets/img/customer2.png"
-													alt=""
-												/>
+									<div class="swiper-slide">
+										<div class="carousel-item swiper-slide">
+											<div class="carousel-item-head">
+												<div class="avatar">
+													<img
+														class="owl-lazy"
+														data-src="./assets/img/customer2.png"
+														src="./assets/img/customer2.png"
+														alt=""
+													/>
+												</div>
+												<div class="info">
+													<h6 class="name">Yessica Christy</h6>
+													<span>Shanxi, China</span>
+												</div>
+												<div class="rating">
+													<span>4.5</span>
+													<i class="fas fa-star"></i>
+												</div>
 											</div>
-											<div class="info">
-												<h6 class="name">Yessica Christy</h6>
-												<span>Shanxi, China</span>
+											<div class="carousel-item-content">
+												“I like it because I like to travel far and still can
+												connect with high speed.”.
 											</div>
-											<div class="rating">
-												<span>4.5</span>
-												<i class="fas fa-star"></i>
-											</div>
-										</div>
-										<div class="carousel-item-content">
-											“I like it because I like to travel far and still can
-											connect with high speed.”.
 										</div>
 									</div>
 								</div>
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-pagination"></div>
 							</div>
 						</div>
 					</div>
@@ -443,24 +459,36 @@
 			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 			crossorigin="anonymous"
 		></script>
-		<script src="./js/owl.carousel.min.js"></script>
+
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 		<script>
-			$('.owl-carousel').owlCarousel({
-				loop: true,
-				margin: 50,
-				nav: true,
-				lazyLoad: true,
-				URLhashListener: true,
-				responsive: {
+			var swiper = new Swiper('.mySwiper', {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				slidesPerGroup: 1,
+				// centeredSlides: true,
+				breakpoints: {
 					0: {
-						items: 1,
+						slidesPerView: 1,
+						spaceBetween: 30,
 					},
 					699: {
-						items: 2,
+						slidesPerView: 2,
+						spaceBetween: 30,
 					},
 					1000: {
-						items: 3,
+						slidesPerView: 3,
+						spaceBetween: 30,
 					},
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
 				},
 			})
 		</script>

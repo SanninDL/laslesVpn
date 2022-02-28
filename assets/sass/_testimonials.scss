@@ -17,19 +17,28 @@
 		}
 	}
 }
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+.swiper-wrapper {
+	align-items: stretch !important;
+}
+.swiper .swiper-slide {
+	height: 300px !important;
+	display: flex;
+	// background-color: red;
+}
+
 .customer {
-	.owl-stage {
-		display: flex;
-		align-items: stretch;
-	}
-	.owl-item {
-		display: flex;
-	}
 	.carousel-item {
-		margin-top: 60px;
+		// margin-top: 60px;
+		display: flex;
+		flex-direction: column;
 		padding: 30px;
 		border: 2px solid #ddd;
 		border-radius: 10px;
+		// height: 400px;
 
 		&-head {
 			display: flex;
